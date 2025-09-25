@@ -297,8 +297,7 @@ async def qus_send2(qu: Quiz):
 
 
 def main():
-    application = ApplicationBuilder().token("8357218914:AAFhG8hF5ZMK3OknROHcNpnkyeuyYrjFmoo").build()
-    # application = ApplicationBuilder().token("7763059278:AAGOq5p41F62XU0DTwoeNKa4HBtHEDRr8j4").build()
+    application = ApplicationBuilder().token("8306994726:AAF9J7Ec4gwqHR3ApG6GykzA0FWcViQ7GVM").build()
     help_handler = CommandHandler('help', help_func)
     start_handler = CommandHandler('start', start_func)
     stop_handler = CommandHandler('stop', stop_func)
@@ -318,3 +317,4 @@ _thread = threading.Thread(target=asyncio.run, args=(quiz_funk(),))
 _thread.start()
 
 main()
+
